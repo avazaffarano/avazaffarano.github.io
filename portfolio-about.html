@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ehf6ekv.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ehf6ekv.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ehf6ekv.css">
+
+    </head>
+
+    <body>
+
+      <div id="overlay60" class="hidden_overlay overlay-menu">
+        <button class="close-overlay">&times;</button>
+        <nav>
+        <a href="#">Home<span>Back to the beginning?</span></a></a>
+        <a href="#">Projects<span>Ooo onto the good stuff</span></a></a>
+        <a href="#">About<span>Learn how cool I am</span></a></a>
+        <a href="#">Contact<span>Let's connect!</span></a></a>
+        </nav>
+    </div>
+
+    <div class="navbar">
+
+        <div class="logo">Z</div>
+        <button class="menu-button" data-overlay="overlay60">&#9776;</button>
+      
+       
+        
+    </div>
+                
+
+            <div class="profile-wrapper">
+                <img src="img/doily/abbys.png" alt="Doily" class="doily">
+                <img src="img/pfp.jpg" alt="Profile Picture" class="profile-pic">
+            </div>
+            
+        </header>
+
+        <main>
+            
+        <div id="full-bio">
+            <h3>Ava Zaffarano</h3>
+            <p>Hi, I'm Ava — a student Graphic Designer studying at Central Michigan University, where I'm exploring the sweet spot between visual communication and human connection.</p> 
+                
+            <p>Design should do something—start a dialogue, solve a problem, or make someone pause. Whether I'm building a brand identity or designing a poster, I approach every project like a lemonade stand: simple, honest, and built to bring people in.</p>  
+        
+            <h3 id="my-experience">My Experience</h3>
+
+            <p>My work spans branding, print, typography, and a growing curiosity for pixel art and animation. Outside of school, I've had the opportunity to work an internship in Bristol, England for a creative communications company. The year prior, I studied digital illustration and art history in Florence, Italy. This upcoming summer, I will be the Craft Specialist at a summer camp on Lake Michigan, managing the craft house and teaching campers how to utilize their creativity. </p>
+            
+            <p>I'm always on the lookout for projects that let me learn, collaborate, and create something meaningful. If you're into bold ideas, thoughtful details, and designs that feel like conversations, let's connect. </p>
+        </div>
+        </main>
+
+
+        <script>
+            // Toggle project overlays
+document.querySelectorAll('.project-section').forEach(section => {
+  section.addEventListener('click', () => {
+    const overlayId = section.getAttribute('data-overlay');
+    const overlay = document.getElementById(overlayId);
+    if (overlay) {
+      overlay.style.display = 'block';
+    }
+  });
+});
+
+// Toggle menu overlay
+document.querySelectorAll('.menu-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const overlayId = button.getAttribute('data-overlay');
+    const overlay = document.getElementById(overlayId);
+    if (overlay) {
+      overlay.style.display = 'block';
+    }
+  });
+});
+
+// Close overlay when clicking close button
+document.querySelectorAll('.close-overlay').forEach(button => {
+  button.addEventListener('click', () => {
+    button.closest('.hidden_overlay').style.display = 'none';
+  });
+});
+
+
+            
+          </script>
+    </body>
+</html>

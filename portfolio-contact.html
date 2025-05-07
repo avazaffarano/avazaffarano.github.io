@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ehf6ekv.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ehf6ekv.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ehf6ekv.css">
+
+    </head>
+
+    <body>
+        <div id="overlay60" class="hidden_overlay overlay-menu">
+            <button class="close-overlay">&times;</button>
+            <nav>
+            <a href="#">Home<span>Back to the beginning?</span></a></a>
+            <a href="#">Projects<span>Ooo onto the good stuff</span></a></a>
+            <a href="#">About<span>Learn how cool I am</span></a></a>
+            <a href="#">Contact<span>Let's connect!</span></a></a>
+            </nav>
+        </div>
+
+        <div class="navbar">
+
+            <div class="logo">Z</div>
+            <button class="menu-button" data-overlay="overlay60">&#9776;</button>
+          
+           
+            
+        </div>
+                   
+        
+                
+
+        <header>
+            <!-- <div class="navbar">
+                <div class="logo">Z</div>
+                <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Works</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                </nav>
+            </div> -->
+
+           
+            
+
+            <div id="butterfly-doily">
+
+                <img src="img/doily/butterfly.png" alt="butterfly-doily" class="rotate-photo">
+
+            </div>
+            
+            <div class="contact">
+                <h1>Let's Chat</h1>
+                <p>zaffarano.ava@gmail.com</p>
+            </div>
+
+
+           
+
+
+            <div class="other-websites">
+                <h1>Other Websites</h1>
+                <a href="https://thewednesdaysaintarchives.weebly.com/"><p>TheWednesdaySaintArchives.com</p></a>
+            
+                <h1>Socials</h1>
+                     
+                    <a href="https://www.instagram.com/ava_zaffarano/"><p>@ava_zaffarano</p></a>
+                    <a href="https://www.instagram.com/wednesdaysaint/"><p>@wednesdaysaint</p></a>
+                    
+                      
+                
+            </div>
+
+
+        
+
+        </header>
+        <script>
+            // Toggle project overlays
+document.querySelectorAll('.project-section').forEach(section => {
+  section.addEventListener('click', () => {
+    const overlayId = section.getAttribute('data-overlay');
+    const overlay = document.getElementById(overlayId);
+    if (overlay) {
+      overlay.style.display = 'block';
+    }
+  });
+});
+
+// Toggle menu overlay
+document.querySelectorAll('.menu-button').forEach(button => {
+  button.addEventListener('click', () => {
+    const overlayId = button.getAttribute('data-overlay');
+    const overlay = document.getElementById(overlayId);
+    if (overlay) {
+      overlay.style.display = 'block';
+    }
+  });
+});
+
+// Close overlay when clicking close button
+document.querySelectorAll('.close-overlay').forEach(button => {
+  button.addEventListener('click', () => {
+    button.closest('.hidden_overlay').style.display = 'none';
+  });
+});
+
+
+            
+          </script>
+    </body>
+</html>

@@ -71,7 +71,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgb(213, 255, 60);
+    background: rgb(136, 144, 127);
     z-index: 9999;
     overflow-y: auto;
   }
@@ -87,7 +87,7 @@
   }
 
   .overlay-menu nav a {
-    color: rgb(88, 92, 83);;
+    color: rgb(213, 255, 60);
     font-size: 2rem;
     text-decoration: none;
     margin: 20px 0;
@@ -106,7 +106,7 @@
 
 
   .overlay-menu nav a:hover {
-    color: #31312f;
+    color: rgb(227, 255, 124);
     font-family: "pf-pixelscript", sans-serif;
     transition: color 1s ease, font-size 1s ease, transform 1s ease;
     font-size: 51px;
@@ -158,21 +158,22 @@
 button.close-overlay{
 
   position: absolute;
-  
+  color: black;
   padding-left:40px ;
   background: none;
   border: none;
   font-size: 60px;
   color: (88, 92, 83);;
+  cursor: pointer;
 }
 
-.close-overlay:hover{
+/*.close-overlay:hover{
   cursor: pointer;
   text-align: right;
   padding-right: 40px;
   font-size: larger;
-  color: rgb(213, 255, 60);
-}
+  
+}*/
 
 
 .navbar {
